@@ -10,6 +10,7 @@ public class InputNeuron extends Neuron {
 	
 	public InputNeuron(InputLayer l, String desc) {
 		parentlayer = l;
+		this.desc = desc;
 	}
 	
 	public boolean isFired() {
@@ -18,5 +19,15 @@ public class InputNeuron extends Neuron {
 	
 	public void setFired(boolean fire) {
 		this.fired = fire;
+	}
+	
+	public void reset() {
+		setFired(false);
+	}
+
+	@Override
+	public void fire() {
+		for(Neuron n : tofire)
+			n.fire();
 	}
 }

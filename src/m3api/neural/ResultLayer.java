@@ -30,4 +30,10 @@ public class ResultLayer extends Layer {
 	public void addNeuron(String resultname) {
 		addNeuron(new ResultNeuron(this, resultname));
 	}
+	
+	public void reset() {
+		for(ResultNeuron n : neurons) {
+			n.reset();
+		}
+	}
 }

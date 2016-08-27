@@ -17,4 +17,16 @@ public class InputLayer extends Layer {
 	public void addNeuron(String s) {
 		addNeuron(new InputNeuron(this, s));
 	}
+	
+	public void fire() {
+		for(InputNeuron n : neurons)
+			if(n.isFired())
+				n.fire();
+	}
+	
+	public void reset() {
+		for(InputNeuron n : neurons) {
+			n.reset();
+		}
+	}
 }

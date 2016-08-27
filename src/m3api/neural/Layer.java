@@ -9,7 +9,7 @@ public class Layer {
 	protected Layer() {}
 	
 	public Layer(int neurons) {
-		for(int i = 0; i < this.neurons.size(); i++) {
+		for(int i = 0; i < neurons; i++) {
 			this.neurons.add(new Neuron());
 		}
 	}
