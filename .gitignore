@@ -1,0 +1,12 @@
+# Java .gitignore
+
+test.*
+*.class
+*.jar
+.classpath
+.project
+*.dat
+/bin/
+Testing.*
+test.*
+.settings/
