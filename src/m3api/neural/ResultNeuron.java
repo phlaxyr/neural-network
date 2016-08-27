@@ -7,6 +7,7 @@ public class ResultNeuron extends Neuron {
 	
 	public ResultNeuron(ResultLayer l, String desc) {
 		parentlayer = l;
+		this.desc = desc;
 	}
 	
 	@Override
